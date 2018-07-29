@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center;">
+  <h1>
+    Employee Management System 
+  </h1>
+  <!-- <p (click)="getStatus()">Click Here:: {{childStatus}}</p> -->
+</div>
+<nav>
+  <ul>
+    <li>
+        <a routerLink="/EployeeNew/:id" routerLinkActive="active">New Employee</a>
+    </li>
+    <li>
+        <a routerLink="/EmployeeTreeview" routerLinkActive="active">Tree View</a>
+    </li>
+    <li>
+        <a routerLink="/EmployeeGridview" routerLinkActive="active">Grid View</a>
+    </li>
+    <li>
+      <a routerLink="/ParentChild" routerLinkActive="active">Parent Child</a>
+  </li>
+  </ul>
+  </nav>
+  <div style="width: 100%;height: 100%;text-align: center;">  
+  <router-outlet></router-outlet>
+  <!-- <app-eployee-new (changeParentTitle)="changeTitleFromChild($event)"></app-eployee-new> -->
+</div>
+<div id="divLoading"> 
+</div>
+

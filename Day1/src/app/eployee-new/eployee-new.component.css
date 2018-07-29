@@ -1,0 +1,25 @@
+#tbEmpNew {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#tbEmpNew td, #tbEmpNew th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbEmpNew th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+#tbEmpNew input {
+    width: 97%;
+    padding: 10px;
+    margin: 0px;
+}

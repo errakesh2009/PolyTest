@@ -1,0 +1,15 @@
+<table id="tbEmpGridView" align="center">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+<tr *ngFor="let emp of empList" (click)="getEmpDetail(emp)">
+  <td>{{emp.empId}}</td> 
+  <td>{{emp.empName}}</td> 
+  <td>{{emp.empMobile}}</td> 
+  <td>{{emp.empEmail}}</td>  
+</tr>
+</table>
+

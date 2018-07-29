@@ -1,0 +1,47 @@
+<!-- <div>
+  <button (click)="changeTitle()">Change Title</button>
+</div> -->
+<form>
+  <table id="tbEmpNew" align="center">
+      <th colspan="2">{{title}}</th>
+      <tr>
+            <td>
+                <span for="empId">Id</span>
+            </td>
+            <td>
+                <input type="text"  [(ngModel)]="empModel.empId" name="empId" placeholder="Id"/>
+            </td>
+          </tr>
+    <tr>
+      <td>
+          <span for="empName">Name</span>
+      </td>
+      <td>
+          <input type="text"  [(ngModel)]="empModel.empName" name="empName" placeholder="Name"/>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            <span for="empMobile">Mobile</span>
+        </td>
+        <td>
+            <input type="text"  [(ngModel)]="empModel.empMobile" name="empMobile" placeholder="Mobile"/>
+        </td>
+      </tr>
+      <tr>
+          <td>
+              <span for="empEmail">Email</span>
+          </td>
+          <td>
+              <input type="text"  [(ngModel)]="empModel.empEmail" name="empEmail" placeholder="Email"/>
+          </td>
+        </tr>
+        <tr>          
+          <td colspan="2" style="text-align: right;"> 
+                <input type="button" (click)="saveEmployee()" value="Save" style="width:25%;"/>
+                <input type="button" (click)="resetEmployee()" value="Reset" style="width:25%;"/>
+                <input type="button" (click)="cancelEmployee()" value="Cancel" style="width:25%;"/>
+              </td>
+        </tr>
+  </table>
+</form>
